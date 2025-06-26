@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор равнобедренного треугольника</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Калькулятор равнобедренного треугольника</h1>
+            <div class="input-type">
+                <label><input type="radio" name="inputType" value="sideAngle" checked> Боковая сторона и угол при основании</label>
+                <label><input type="radio" name="inputType" value="twoSides"> Боковая сторона и основание</label>
+                <button id="showButton">Показать</button>
+            </div>
+            <div class="input-fields">
+                <div id="sideAngleFields">
+                    <label>Боковая сторона (a): <input type="number" id="sideA" min="0"></label>
+                    <label>Угол при основании (α): <input type="number" id="angleBase" min="0" max="90"></label>
+                </div>
+                <div id="twoSidesFields" style="display:none;">
+                    <label>Боковая сторона (a): <input type="number" id="sideA2" min="0"></label>
+                    <label>Основание (b): <input type="number" id="baseSide" min="0"></label>
+                </div>
+            </div>
+            <div class="calculate-options">
+                <label><input type="checkbox" id="bisectorCheckbox"> Биссектрисы</label>
+                <label><input type="checkbox" id="heightCheckbox"> Высоты</label>
+                <label><input type="checkbox" id="perimeterCheckbox"> Периметр</label>
+                <label><input type="checkbox" id="medianCheckbox"> Медианы</label>
+            </div>
+            <button id="calculateButton">Вычислить</button>
+            <button id="clearButton">Очистить</button>
+            <div id="results"></div>
+        </div>
+        <div class="image-container">
+            <img id="triangleImage" src="img/sideAngle.png" alt="Изображение треугольника">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.calculator {
+    flex: 1;
+    max-width: 400px;
+}
+
+.input-type, .input-fields, .calculate-options {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#results {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.error-input {
+    border: 2px solid red;
+}
+
+.error-checkbox {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.error-text {
+    color: red;
+    font-size: 12px;
+    display: block;
+}
+
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
